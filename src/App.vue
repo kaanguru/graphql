@@ -16,13 +16,15 @@ export default {
 </script>
 
 <style>
-html {
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Space+Grotesk&display=swap');
 
-  background-color: beige;
+html {
+  background-color: #FFFDE3;
+  @apply bg-gradient-to-r from-emerald-200;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
