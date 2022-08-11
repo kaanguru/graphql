@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2>SpaceX Launches from GraphQL API!🚀</h2>
-    <img src="icons8_drag_100px.png" alt="drag" class="w-10 h-10  mx-auto"></img>
-    <p v-if="date !== ''">Date of Dragged Launch <span class="text-rose-900">{{ mission }}</span> is: {{ date }} </p>
+    <img src="icons8_drag_100px.png" alt="drag" class="w-10 h-10  mx-auto animate-bounce">
+    <p v-if="date !== ''">Date of Dragged Launch <span class="text-rose-900 ">{{ mission }}</span> is: {{ date }} </p>
     <p v-else>Just Drag Launches to see launch date</p>
 
     <ApolloQuery :query="require('../graphql/Star.gql')" :variables="{ launches }">
@@ -14,7 +14,7 @@
         <!-- Result -->
         <div v-else-if="data" class="results ">
           <draggable v-model="data.launches" class="draggable" :move="checkMove" @start="drag = true" @end="drag = false">
-            <h5 v-for="element in data.launches" :key="element.mission_id[0]">{{ element.mission_name }} <img src="icons8_drag_100px.png" alt="draw" class="ml-3 w-5 h-5 "> </h5>
+            <h5 v-for="element in data.launches" :key="element.mission_id[0]">{{ element.mission_name }} <img src="icons8_drag_100px.png" class="ml-3 w-5 h-5"> </h5>
           </draggable>
         </div>
         <!-- No result -->
@@ -54,11 +54,11 @@ export default {
 
 h2 {
   font-family: 'Rubik Dirt', cursive;
-  @apply text-rose-400 text-3xl tracking-widest;
+  @apply text-rose-400 text-4xl tracking-widest;
 }
 
 p {
-  @apply text-lg font-bold;
+  @apply text-lg font-bold animate-pulse;
 }
 
 .draggable {

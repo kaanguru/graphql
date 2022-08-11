@@ -1,4 +1,5 @@
 module.exports = {
+  productionSourceMap: false,
   pluginOptions: {
     apollo: {
       enableMocks: false,
