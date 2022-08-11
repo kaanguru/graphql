@@ -14,11 +14,6 @@ module.exports = {
     },
     "plugins": [
         "vue",
-        'graphql',
     ],
-    "rules": {
-        'graphql/template-strings': ['error', {
-            env: 'literal',
-        }],
-    },
+
 };
