@@ -1,8 +1,9 @@
 module.exports = {
   pluginOptions: {
     apollo: {
-      enableMocks: true,
-      enableEngine: false
+      enableMocks: false,
+      enableEngine: false,
+      lintGQL: false
     },
     windicss: {
     },
