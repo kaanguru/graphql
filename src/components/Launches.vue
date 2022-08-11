@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>👋 Welcome to the SpaceX GraphQL API! 🚀</h2>
     <ApolloQuery :query="require('../graphql/Star.gql')" :variables="{ launches }">
       <template slot-scope="{ result: { loading, error, data } }">
         <!-- Loading -->
@@ -31,7 +32,7 @@ export default {
 
 <style scoped>
 .result {
-  @apply container mx-auto;
+  @apply container mx-auto flex flex-wrap;
 }
 
 .launch-item {
