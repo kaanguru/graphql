@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Launches />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Launches from './components/Launches.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Launches
   }
 }
 </script>
 
 <style>
+html {
+
+  background-color: beige;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
