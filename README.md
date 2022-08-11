@@ -3,9 +3,9 @@
 This application gets data from SpaceX GraphQL API
 And Displays  dates of Dragged Launches.
 
-## Demo
+## Demo Page
 
-<https://heroic-cheesecake-c7a2f0.netlify.app/>
+<https://ambimax-graphql-vue-drag.netlify.app/>
 
 ## Project setup
 
